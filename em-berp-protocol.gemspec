@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'bert'
   gem.add_dependency 'eventmachine'
+  gem.add_development_dependency 'rake'
 end
