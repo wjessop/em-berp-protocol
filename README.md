@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/wjessop/em-berp-protocol.png?branch=master)](https://travis-ci.org/wjessop/em-berp-protocol)
+
 # EventMachine::Protocols::BerpProtocol
 
 EventMachine connection protocol for sending and receiving BERP messages.
