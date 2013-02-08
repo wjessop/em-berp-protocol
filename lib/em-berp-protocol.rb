@@ -14,7 +14,7 @@ module EventMachine
               slice = @buf.slice!(0,size)
               receive_object(BERT.decode(slice))
             rescue TypeError => e
-              handle_bert_error("TypeError: #{e}")
+              handle_bert_error("TypeError: #{e} with data #{slice.inspect}")
             rescue EOFError => e
               handle_bert_error("EOFError: #{e} with data #{slice.inspect}")
             end

@@ -19,7 +19,7 @@ class TestBerpFailureHandling < Test::Unit::TestCase
         s.close
       end
     }
-    assert $error.match(/\ATypeError: Invalid magic value for BERT string from client 127\.0\.0\.1:\d+\z/)
+    assert $error.match(/\ATypeError: Invalid magic value for BERT string with data "\\xFD" from client 127\.0\.0\.1:\d+\z/)
   end
 
   def test_unexpected_eof_in_data_stream
