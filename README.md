@@ -29,6 +29,12 @@ module RubyServer
   def receive_object(obj)
     send_object({'Oh yeah' => obj})
   end
+
+  # Optional - specify a receive_error method to get notifications of problems parsing bert data
+  # When this happens em-berp-protocol closes the client connection
+  def receive_error(error_string)
+  	puts error
+  end
 end
 ```
 
